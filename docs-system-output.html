@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="bg-slate-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Documentation | Casclang</title>
+  <link rel="icon" type="image/png" href="assets/casclang-trans.png">
+</head>
+<body>
+  <div class="bg-blue-600 h-auto pb-16 w-[100%]">
+    <div class="text-center text-white pt-4">
+        <p><a href="index.html" class="text-white p-4">Home</a> <a href="docs.html" class="text-white p-4">Documentation</a> <a href="https://github.com/casclang" class="text-white p-4">Source Code</a></p>
+    </div>
+    <h1 class="text-center pt-16 text-3xl text-white">Documentation</h1>
+    <h2 class="text-center pt-4 text-2xl font-light text-white">Learn how to write any application using the Casclang programming language on the .NET platform.</h2>
+  </div>
+
+  <div class="w-[95vw] lg:w-[65vw] m-auto pt-4 mb-4">
+        <h1 class="text-white text-center text-3xl">System.Output method</h1>
+        
+        <h2 class="text-white mt-4 text-2xl">Definition</h2>
+        <p class="text-white mt-4">Namespace: <a href="docs-namespace-system.html" class="text-blue-400">System</a></p>
+        <p class="text-white mt-4">Writes the text representation of the specified value or values to the standard output stream.</p>
+        <h2 class="text-white text-2xl mt-4">Methods & Submethods</h2>
+        <table class="mt-4 table-auto text-white bg-slate-800 rounded-[0.25em] border-solid border-2 border-slate-700">
+          <thead class="border-solid border-2 border-slate-700">
+            <tr>
+              <th class="p-4 border-solid border-2 border-slate-700">Method</th>
+              <th class="p-4 border-solid border-2 border-slate-700">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-4 border-solid border-2 border-slate-700">Output</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Outputs information on the same line.</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-solid border-2 border-slate-700">Output.line</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Outputs information to a new line.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-2xl text-white mt-4">Examples</h2>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
+          <p class="text-slate-600">// A simple "Hello, world!" Program:</p>
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.call {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.void {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400 ml-8">{</p>
+          <p class="text-fuchsia-400 ml-16">System.Output {</p>
+          <p class="text-red-400 ml-24">"Hello, world"</p>
+          <p class="text-fuchsia-400 ml-16">}</p>
+          <p class="text-fuchsia-400 ml-8">}</p>
+        </div>
+        <p class="text-white mt-4">Using the "Hello, world" example from our homepage, you can see a program that will display "Hello, world" to the console. Pretty basic. If we were to add another <code class="bg-slate-800 rounded-[0.25em] p-1">System.Output {}</code> with information, it will append to the same line.</code></p>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
+          <p class="text-slate-600">// Outputting with multiple lines:</p>
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.call {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.void {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400 ml-8">{</p>
+          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
+          <p class="text-red-400 ml-24">"Hello, world"</p>
+          <p class="text-fuchsia-400 ml-16">}</p>
+          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
+            <p class="text-red-400 ml-24">"I am a program!"</p>
+            <p class="text-fuchsia-400 ml-16">}</p>
+          <p class="text-fuchsia-400 ml-8">}</p>
+        </div>
+        <p class="text-white mt-4">Here we can see that the program is now outputting two lines. "Hello, world", then a new line, and then "I am a program!". If we were to use System.Output rather than System.Output.line, than these would both be on the same line.</p>
+    </div>
+    
+    <div class="bg-blue-600 w-[100%] h-auto p-8 mt-16">
+        <h1 class="text-center text-white text-3xl">Made with ❤️ by <a href="https://ajstrong.xyz" target="_blank" class="underline text-white">AJStrong</a> & Contributors.</h1>
+      </div>
+
+</body>
+</html>

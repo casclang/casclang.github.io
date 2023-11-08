@@ -1,2 +1,16 @@
-# casclang.github.io
-A website for Casclang. Created utilising TailwindCSS
+# templatewind
+My tailwind template :)
+
+Requires:
+
+NodeJS 20
+
+TailwindCSS
+
+Install:
+
+`npm install -D tailwindcss`
+
+Usage (build):
+
+`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`

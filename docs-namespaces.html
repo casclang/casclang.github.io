@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="bg-slate-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Documentation | Casclang</title>
+  <link rel="icon" type="image/png" href="assets/casclang-trans.png">
+</head>
+<body>
+  <div class="bg-blue-600 h-auto pb-16 w-[100%]">
+    <div class="text-center text-white pt-4">
+        <p><a href="index.html" class="text-white p-4">Home</a> <a href="docs.html" class="text-white p-4">Documentation</a> <a href="https://github.com/casclang" class="text-white p-4">Source Code</a></p>
+    </div>
+    <h1 class="text-center pt-16 text-3xl text-white">Documentation</h1>
+    <h2 class="text-center pt-4 text-2xl font-light text-white">Learn how to write any application using the Casclang programming language on the .NET platform.</h2>
+  </div>
+
+  <div class="w-[95vw] lg:w-[65vw] m-auto pt-4 mb-4">
+        <h1 class="text-white text-center text-3xl">Namespaces</h1>
+        <p class="text-white mt-4">Namespaces are heavily used in Casclang programming. .NET utilises namespaces as a way to organise its many methods and classes.</p>
+        <p class="text-white mt-4">We need to add namespaces into our document to ensure that they can be utilised. You cannot write "System.Output {}" without first including the System namespace in your codebase.</p>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400">}</p>
+        </div>
+        <p class="text-white mt-4">To include a namespace in your code, you can use the "Namespace" method as shown above. From here you can use all methods that include the "System" namespace within your code.</p>
+        <p class="text-white mt-4">You can add multiple namespace within the "Namespace" method, such as: </p>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System.Collections.Generic</code></p>
+          <p class="text-fuchsia-400">}</p>
+        </div>
+        <p class="text-white mt-4">&bull; Continue here for <a href="docs-system-output.html" class="text-blue-400">System.Output method</a> documentation.</p>
+    </div>
+    
+    <div class="bg-blue-600 w-[100%] h-auto p-8 mt-16">
+        <h1 class="text-center text-white text-3xl">Made with ❤️ by <a href="https://ajstrong.xyz" target="_blank" class="underline text-white">AJStrong</a> & Contributors.</h1>
+      </div>
+
+</body>
+</html>

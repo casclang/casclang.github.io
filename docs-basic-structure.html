@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="bg-slate-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Documentation | Casclang</title>
+  <link rel="icon" type="image/png" href="assets/casclang-trans.png">
+</head>
+<body>
+  <div class="bg-blue-600 h-auto pb-16 w-[100%]">
+    <div class="text-center text-white pt-4">
+        <p><a href="index.html" class="text-white p-4">Home</a> <a href="docs.html" class="text-white p-4">Documentation</a> <a href="https://github.com/casclang" class="text-white p-4">Source Code</a></p>
+    </div>
+    <h1 class="text-center pt-16 text-3xl text-white">Documentation</h1>
+    <h2 class="text-center pt-4 text-2xl font-light text-white">Learn how to write any application using the Casclang programming language on the .NET platform.</h2>
+  </div>
+
+  <div class="w-[95vw] lg:w-[65vw] m-auto pt-4 mb-4">
+        <h1 class="text-white text-center text-3xl">Basic Casclang file structure</h1>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-8 text-2xl font-mono">
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.call {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400">}</p>
+          <p class="text-fuchsia-400">System.Method.void {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400 ml-8">{</p>
+          <p class="text-slate-500 ml-16">...</p>
+          <p class="text-fuchsia-400 ml-8">}</p>
+        </div>
+        <p class="text-white mt-4">Here we can see the basic structure of a Casclang file.</p>
+        <p class="text-white mt-4">It's important to break it down into chunks, so let's do that:</p>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
+          <p class="text-fuchsia-400"><code>Namespace {</code></p>
+          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
+          <p class="text-fuchsia-400">}</p>
+        </div>
+        <p class="text-white mt-4">Here we can see the first statement called in the code, the "Namespace" method.</p>
+        <p class="text-white mt-4">Invoking Namespaces in your code give it extended functionality. The "main" namespace that every program will utilise is the "System" namespace. This gives it functionality such as reading user input, creating variables.</p>
+        <p class="text-white mt-4">Each program method will have a Namespace attached to it, such as the "System.Variable" method. The documentation for each of these methods will inform you of which Namespace it utilises.</p>
+        <p class="text-white mt-4">&bull; <a href="docs-namespaces.html" class="text-blue-400">You can read the Namespaces documentation for more information.</a></p>
+
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-8 text-2xl font-mono">
+          <p class="text-fuchsia-400">System.Method.call {</p>
+          <p class="text-yellow-200 ml-8">Main()</p>
+          <p class="text-fuchsia-400">}</p>
+        </div>
+        <p class="text-white mt-4">
+          Here we have another vital part of the structure, this here calls the Main method (also known in other languages as Functions) which is about to be written. Note that it is invoking the "System" namespace that was added to our codebase earlier.
+        </p>
+        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-8 text-2xl font-mono">
+          <p class="text-fuchsia-400">System.Method.void {</p>
+            <p class="text-yellow-200 ml-8">Main()</p>
+            <p class="text-fuchsia-400 ml-8">{</p>
+            <p class="text-slate-500 ml-16">...</p>
+            <p class="text-fuchsia-400 ml-8">}</p>
+        </div>
+        <p class="text-white mt-4">
+          Finally we actually create our Main method. Please note that here we use "void" because it is not returning a value to another method. To learn more about methods read <a href="docs-system-method.html" class="text-blue-400">here</a>.
+        </p>
+        <p class="text-white mt-4">
+          The "..." is used as a placeholder to represent where your code may go.
+        </p>
+        <p class="text-white mt-4">Finally we close our main method with a closing brace "}"</p>
+        <p class="text-white mt-4">&bull; For further reading consider: <a href="docs-build.html" class="text-blue-400">Building & Compiling</a> or begin to read about our language features found on our <a href="docs.html" class="text-blue-400">Documentation page</a>.</p>
+    </div>
+    
+    <div class="bg-blue-600 w-[100%] h-auto p-8 mt-16">
+      <h1 class="text-center text-white text-3xl">Made with ❤️ by <a href="https://ajstrong.xyz" target="_blank" class="underline text-white">AJStrong</a> & Contributors.</h1>
+    </div>
+
+</body>
+</html>
