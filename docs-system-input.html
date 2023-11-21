@@ -17,11 +17,11 @@
   </div>
 
   <div class="w-[95vw] lg:w-[65vw] m-auto pt-4 mb-4">
-        <h1 class="text-white text-center text-3xl">System.Output Method</h1>
+        <h1 class="text-white text-center text-3xl">System.Input Method</h1>
         
         <h2 class="text-white mt-4 text-2xl">Definition</h2>
         <p class="text-white mt-4">Namespace: <a href="docs-namespace-system.html" class="text-blue-400">System</a></p>
-        <p class="text-white mt-4">Writes the text representation of the specified value or values to the standard output stream.</p>
+        <p class="text-white mt-4">Reads the next line of characters from the standard input stream.</p>
         <h2 class="text-white text-2xl mt-4">Methods & Submethods</h2>
         <table class="mt-4 table-auto text-white bg-slate-800 rounded-[0.25em] border-solid border-2 border-slate-700">
           <thead class="border-solid border-2 border-slate-700">
@@ -32,18 +32,17 @@
           </thead>
           <tbody>
             <tr>
-              <td class="p-4 border-solid border-2 border-slate-700">Output</td>
-              <td class="p-4 border-solid border-2 border-slate-700">Outputs information on the same line.</td>
-            </tr>
-            <tr>
-              <td class="p-4 border-solid border-2 border-slate-700">Output.line</td>
-              <td class="p-4 border-solid border-2 border-slate-700">Outputs information to a new line.</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Input.line</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Takes Input from the standard input stream</td>
             </tr>
           </tbody>
         </table>
+        <h2 class="text-2xl text-white mt-4">Returns</h2>
+        <p class="text-white mt-4">String.</p>
+        <p class="text-white mt-4">The next line of characters from the input stream, or null if no more lines are available.</p>
         <h2 class="text-2xl text-white mt-4">Examples</h2>
         <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
-          <p class="text-slate-600">// A simple "Hello, world!" Program:</p>
+          <p class="text-slate-600">// A simple program to take user input.</p>
           <p class="text-fuchsia-400"><code>Namespace {</code></p>
           <p class="text-fuchsia-400 ml-8"><code>System</code></p>
           <p class="text-fuchsia-400">}</p>
@@ -53,33 +52,15 @@
           <p class="text-fuchsia-400">System.Method.void {</p>
           <p class="text-yellow-200 ml-8">Main()</p>
           <p class="text-fuchsia-400 ml-8">{</p>
-          <p class="text-fuchsia-400 ml-16">System.Output {</p>
-          <p class="text-red-400 ml-24">"Hello, world"</p>
+          <p class="text-fuchsia-400 ml-16">System.Input.line {</p>
+          <p class="text-red-400 ml-24">userInput</p>
           <p class="text-fuchsia-400 ml-16">}</p>
           <p class="text-fuchsia-400 ml-8">}</p>
         </div>
-        <p class="text-white mt-4">Using the "Hello, world" example from our homepage, you can see a program that will display "Hello, world" to the console. Pretty basic. If we were to add another <code class="bg-slate-800 rounded-[0.25em] p-1">System.Output {}</code> with information, it will append to the same line.</code></p>
-        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
-          <p class="text-slate-600">// Outputting with multiple lines:</p>
-          <p class="text-fuchsia-400"><code>Namespace {</code></p>
-          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
-          <p class="text-fuchsia-400">}</p>
-          <p class="text-fuchsia-400">System.Method.call {</p>
-          <p class="text-yellow-200 ml-8">Main()</p>
-          <p class="text-fuchsia-400">}</p>
-          <p class="text-fuchsia-400">System.Method.void {</p>
-          <p class="text-yellow-200 ml-8">Main()</p>
-          <p class="text-fuchsia-400 ml-8">{</p>
-          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
-          <p class="text-red-400 ml-24">"Hello, world"</p>
-          <p class="text-fuchsia-400 ml-16">}</p>
-          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
-            <p class="text-red-400 ml-24">"I am a program!"</p>
-            <p class="text-fuchsia-400 ml-16">}</p>
-          <p class="text-fuchsia-400 ml-8">}</p>
-        </div>
-        <p class="text-white mt-4">Here we can see that the program is now outputting two lines. "Hello, world", then a new line, and then "I am a program!". If we were to use System.Output rather than System.Output.line, than these would both be on the same line.</p>
-        <p class="text-white mt-4">Continue reading for <a href="docs-system-variable.html" class="text-blue-400">System.Variable</a>.</p>
+        <p class="text-white mt-4">
+          Here we have a simple program to take input, however it does not do much else. Input must be stored inside of a variable, in this case we created the variable "userInput", and is taken as a string.
+        </p>
+        <p class="text-white mt-4">Continue reading for <a href="docs-system-input.html" class="text-blue-400">System.Input</a>.</p>
     </div>
     
     <div class="bg-blue-600 w-[100%] h-auto p-8 mt-16">

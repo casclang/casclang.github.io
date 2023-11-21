@@ -574,6 +574,10 @@ video {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .table {
   display: table;
 }
@@ -598,10 +602,6 @@ video {
   border-radius: 0.25em;
 }
 
-.rounded-\[0\.5em\] {
-  border-radius: 0.5em;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -623,11 +623,6 @@ video {
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {

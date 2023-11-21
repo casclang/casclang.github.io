@@ -17,11 +17,11 @@
   </div>
 
   <div class="w-[95vw] lg:w-[65vw] m-auto pt-4 mb-4">
-        <h1 class="text-white text-center text-3xl">System.Output Method</h1>
+        <h1 class="text-white text-center text-3xl">System.Variable Method</h1>
         
         <h2 class="text-white mt-4 text-2xl">Definition</h2>
         <p class="text-white mt-4">Namespace: <a href="docs-namespace-system.html" class="text-blue-400">System</a></p>
-        <p class="text-white mt-4">Writes the text representation of the specified value or values to the standard output stream.</p>
+        <p class="text-white mt-4">A declaration statement declares a new variable. Variables in Cacsclang are implicitly immutable and remain as such. As such variables must be modified utilising the "System.Variable.modify" submethod. Variables are strongly typed in Casclang and as such there is no implicit variable declaration.</p>
         <h2 class="text-white text-2xl mt-4">Methods & Submethods</h2>
         <table class="mt-4 table-auto text-white bg-slate-800 rounded-[0.25em] border-solid border-2 border-slate-700">
           <thead class="border-solid border-2 border-slate-700">
@@ -32,18 +32,30 @@
           </thead>
           <tbody>
             <tr>
-              <td class="p-4 border-solid border-2 border-slate-700">Output</td>
-              <td class="p-4 border-solid border-2 border-slate-700">Outputs information on the same line.</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Variable.string</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Declares a variable as a string.</td>
             </tr>
             <tr>
-              <td class="p-4 border-solid border-2 border-slate-700">Output.line</td>
-              <td class="p-4 border-solid border-2 border-slate-700">Outputs information to a new line.</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Variable.integer</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Declares a variable as an integer.</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-solid border-2 border-slate-700">Variable.float</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Declares a variable as a floating point number.</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-solid border-2 border-slate-700">Variable.boolean</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Declares a variable as a boolean.</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-solid border-2 border-slate-700">Variable.modify</td>
+              <td class="p-4 border-solid border-2 border-slate-700">Temporarly allows for a variable to be mutible.</td>
             </tr>
           </tbody>
         </table>
         <h2 class="text-2xl text-white mt-4">Examples</h2>
         <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
-          <p class="text-slate-600">// A simple "Hello, world!" Program:</p>
+          <p class="text-slate-600">// Creating and modifying variables:</p>
           <p class="text-fuchsia-400"><code>Namespace {</code></p>
           <p class="text-fuchsia-400 ml-8"><code>System</code></p>
           <p class="text-fuchsia-400">}</p>
@@ -53,33 +65,21 @@
           <p class="text-fuchsia-400">System.Method.void {</p>
           <p class="text-yellow-200 ml-8">Main()</p>
           <p class="text-fuchsia-400 ml-8">{</p>
-          <p class="text-fuchsia-400 ml-16">System.Output {</p>
-          <p class="text-red-400 ml-24">"Hello, world"</p>
+          <p class="text-fuchsia-400 ml-16">System.Variable.integer {</p>
+          <p class="text-red-400 ml-24">a = 3</p>
           <p class="text-fuchsia-400 ml-16">}</p>
-          <p class="text-fuchsia-400 ml-8">}</p>
-        </div>
-        <p class="text-white mt-4">Using the "Hello, world" example from our homepage, you can see a program that will display "Hello, world" to the console. Pretty basic. If we were to add another <code class="bg-slate-800 rounded-[0.25em] p-1">System.Output {}</code> with information, it will append to the same line.</code></p>
-        <div class="bg-slate-800 rounded-[0.25em] w-[100%] h-auto p-4 mt-4 text-2xl font-mono">
-          <p class="text-slate-600">// Outputting with multiple lines:</p>
-          <p class="text-fuchsia-400"><code>Namespace {</code></p>
-          <p class="text-fuchsia-400 ml-8"><code>System</code></p>
-          <p class="text-fuchsia-400">}</p>
-          <p class="text-fuchsia-400">System.Method.call {</p>
-          <p class="text-yellow-200 ml-8">Main()</p>
-          <p class="text-fuchsia-400">}</p>
-          <p class="text-fuchsia-400">System.Method.void {</p>
-          <p class="text-yellow-200 ml-8">Main()</p>
-          <p class="text-fuchsia-400 ml-8">{</p>
-          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
-          <p class="text-red-400 ml-24">"Hello, world"</p>
-          <p class="text-fuchsia-400 ml-16">}</p>
-          <p class="text-fuchsia-400 ml-16">System.Output.line {</p>
-            <p class="text-red-400 ml-24">"I am a program!"</p>
+          <p class="text-fuchsia-400 ml-16">System.Variable.modify {</p>
+            <p class="text-red-400 ml-24">a = a + 6</p>
             <p class="text-fuchsia-400 ml-16">}</p>
           <p class="text-fuchsia-400 ml-8">}</p>
         </div>
-        <p class="text-white mt-4">Here we can see that the program is now outputting two lines. "Hello, world", then a new line, and then "I am a program!". If we were to use System.Output rather than System.Output.line, than these would both be on the same line.</p>
-        <p class="text-white mt-4">Continue reading for <a href="docs-system-variable.html" class="text-blue-400">System.Variable</a>.</p>
+        <p class="text-white mt-4">
+          Here we create an integer variable, called "a" and assign it a value of 3. Utilising the Variable.modify submethod we modify the variable and write "a = a + 6", which takes the value of a, which is 3, and add 6 to it. If we were to output "a" utilising System it would return a value of 9.
+        </p>
+        <p class="text-white mt-4">
+          You can also utilise operators and operands with the Variable.modify submethod, such as "a++"" to increment the value of "a" by one.
+        </p>
+        <p class="text-white mt-4">Continue reading for <a href="docs-system-variable.html" class="text-blue-400">Creating your own methods with System.Method</a>.</p>
     </div>
     
     <div class="bg-blue-600 w-[100%] h-auto p-8 mt-16">
