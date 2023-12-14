@@ -1,6 +1,3 @@
-# templatewind
-My tailwind template :)
-
 Requires:
 
 NodeJS 20
